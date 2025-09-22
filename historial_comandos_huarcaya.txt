@@ -1,0 +1,372 @@
+    1  man man
+    2  man cat
+    3  pwd
+    4  whoami
+    5  ls
+    6  ls -l
+    7  ls -la
+    8  echo hola
+    9  echo $HOME
+   10  mkdirec clase4
+   11  mkdir clase4
+   12  ls -l
+   13  cd clase4
+   14  ls -l
+   15  pwd
+   16  echo linea1
+   17  echo linea1 > archivo1.txt
+   18  ls -l
+   19  cat archivo1.txt 
+   20  cat > archivo2.txt
+   21  ls -l
+   22  cat archivo2.txt
+   23  cat *.txt
+   24  cat archivo1.txt > archivo3.txt
+   25  ls -l
+   26  cat archivo3.txt
+   27  cat archivo1.txt
+   28  cat archivo2.txt >> archivo3.txt
+   29  cat archivo3.txt
+   30  cat archivo1.txt archivo2.txt >> archivo4.txt
+   31  cat archivo4.txt
+   32  cd ..
+   33  cd clase4
+   34  ls -l
+   35  cat archivo4.txt
+   36  grep linea 2
+   37  grep linea 2 archivo4.txt
+   38  grep linea1 archivo4.txt
+   39  grep -n linea1 archivo4.txt
+   40  grep -c linea1 archivo4.txt
+   41  grep LINea1 archivo4.txt
+   42  grep -i LINea1 archivo4.txt
+   43  grep -v linea1 archivo4.txt
+   44  cd ..
+   45  pdw
+   46  pwd
+   47  ssh-keygen -t ed25519
+   48  ls -l
+   49  ls -la
+   50  cd .ssh
+   51  ls -l
+   52  cat id_ed25519.pub
+   53  celar
+   54  clear
+   55  cd $HOME
+   56  pwd
+   57  tree
+   58  apt  install tree  # version 2.0.2-1
+   59  sudo apt  install tree  # version 2.0.2-1
+   60  sudo snap install tree
+   61  clear
+   62  tree
+   63  cd clase4
+   64  mkdir practica
+   65  cd practica
+   66  touch practica1.txt
+   67  ls -l
+   68  cp practica1.txt practica2.txt
+   69  ls -l
+   70  rm pratica1.txt
+   71  rm practica1.txt
+   72  mv practica2.txt /home/vagrant/clase4
+   73  ls-l
+   74  ls -l
+   75  cd ..
+   76  ls -l
+   77  rmdir practica
+   78  ls -l
+   79  id
+   80  tree
+   81  mkdir dir1 dir2 dir3
+   82  tree
+   83  mkdir -p dir1/dir2/dir3/dir4
+   84  tree
+   85  mkdir -p {compras,ventas}/{doc1,doc2,doc3}
+   86  tree
+   87  exit
+   88  pwd
+   89  ls -l
+   90  cd clase4
+   91  mkdir facturas pedidos
+   92  ls -l
+   93  tree
+   94  rm archivo1 archivo2 archivo3 archivo4
+   95  rm archivo1.txt archivo2.txt archivo3.txt archivo4.txt
+   96  rm compras
+   97  rm dir2
+   98  rmdir dir2
+   99  rmdir dir 3
+  100  rmdir dir3
+  101  rm practica2.txt
+  102  tree
+  103  clear
+  104  tree
+  105  cd compras
+  106  rm doc1 doc2 doc3
+  107  rmdir doc1 doc2 doc3
+  108  cd clase4
+  109  $HOME
+  110  pwd
+  111  HOME
+  112  $HOME
+  113  cd clase4
+  114  cd $HOME
+  115  pwd
+  116  cd clase4
+  117  tree
+  118  mkdir -p clientes/{facturas,pedidos}
+  119  tree
+  120  rmdir compras
+  121  rmdir dir1
+  122  cd ventas
+  123  rmdir doc1 doc2 doc3
+  124  tree
+  125  cd $HOME
+  126  cd clase4
+  127  rmdir ventas
+  128  tree
+  129  cd dirq
+  130  cd dir1
+  131  cd dir2
+  132  cd dir3
+  133  rmdir dir4
+  134  tree
+  135  cd $home
+  136  tree
+  137  clear
+  138  cd clase4
+  139  tree
+  140  mkdir -p {clientes,proveedores}/{facturas,pedidos}
+  141  tree
+  142  cd dir1
+  143  cd dir2
+  144  rmdir dir3
+  145  cd $home
+  146  cd clase4
+  147  cd dir1
+  148  rmdir dir2
+  149  cd $home
+  150  cd clase4
+  151  tree
+  152  rmdir dir1
+  153  tree
+  154  mkdir -p contactos/{clientes,proveedores}/{facturas,pedidos}
+  155  tree
+  156  mkdir -p huarcaya1/contactos/{clientes,proveedores}/{facturas,pedidos}
+  157  tree
+  158  mkdir -p huarcaya2/{mama/hijo{1..3},papa/{hijo{1..3},ahijado}}
+  159  tree
+  160  clear
+  161  whoiam
+  162  whoami
+  163  id
+  164  cat /etc/passwd
+  165  grep vagrant /etc/passwd
+  166  cat /etc/shadow
+  167  sudo cat /etc/shadow
+  168  sudo grep vagrant /etc/shadow
+  169  grep vagrant /etc/group
+  170  sudo su root
+  171  groupadd Alumnos
+  172  sudo groupadd Alumnos
+  173  useradd -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+  174  sudo useradd -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+  175  cat /etc/group
+  176  cat /etc/passwd
+  177  ls -l
+  178  ls -l /home
+  179  passwd pepe
+  180  sudo passwd pepe
+  181  sudo cat /etc/shadow
+  182  su - pepe
+  183  who
+  184  whoami
+  185  ls -l
+  186  ls -l /home/pepe
+  187  sudo ls -l /home/pepe
+  188  su - pepe
+  189  sudo usermod -aG sudo pepe
+  190  su - pepe
+  191  exit
+  192  man
+  193  man man
+  194  ls
+  195  clear
+  196  cd $home
+  197  pwd
+  198  tree
+  199  cd clase4
+  200  cd ..
+  201  rm -r clase4
+  202  tree
+  203  ls -l
+  204  id
+  205  cat /etc/passwd
+  206  grep vagrant
+  207  clear
+  208  groupadd Alumnos
+  209  tree
+  210  useradd -m -s /bin/bash -c "Alumno pepe" -G Alumnos pepe
+  211  ls -l /home
+  212  passwd pepe
+  213  sudo passwd pepe
+  214  sudo cat /etc/shadow
+  215  su - pepe
+  216  sudo usermod -aG sudo pepe
+  217  su - pepe
+  218  ls -l
+  219  su - pepe
+  220  ls -l /home/pepe
+  221  sudo ls -l /home/pepe
+  222  sudo chown vagrant:vagrant /home/pepe/textopepe.txt
+  223  sudo ls -l /home/pepe
+  224  pdw
+  225  pwd
+  226  mkdir clase5
+  227  cd clase5
+  228  touch practica1.txt
+  229  touch practica2.txt
+  230  ls -l
+  231  chmod 600 practica1.txt
+  232  ls -l
+  233  chmod 004 practica2.txt
+  234  ls -l
+  235  chmod 444 practica2.txt
+  236  ls -l
+  237  chmod 777 practica2.txt
+  238  ls -l
+  239  chmod 444 practica2.txt
+  240  ls -l
+  241  exit
+  242  pwd
+  243  ls -l
+  244  cd repogit
+  245  git clone git@github.com:camiihuarcaya/TP1_AySO_Huarcaya_Camila.git
+  246  ls -l
+  247  cd TP1_AySO_Huarcaya_Camila/
+  248  ls -l
+  249  cat /etc/os-release
+  250  grep HOME_URL /etc/os-release
+  251  grep home_url /etc/os-release
+  252  grep -i Home_url /etc/os-release
+  253  grep -i Home_url /etc/os-release > datos_url.txt
+  254  ls -l
+  255  whoami
+  256  echo "Usuario=$(whoami)"> datos_usuario.txt
+  257  ls -l
+  258  cd datos_usuario.txt
+  259  cat datos_usuario.txt
+  260  pwd
+  261  git add .
+  262  git config --global user.email "huarcayacamila@gmail.com"
+  263  git config --global user.name "camiihuarcaya"
+  264  git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt" 
+  265  git status
+  266  cat /proc
+  267  cd /proc
+  268  ls -l
+  269  cd ..
+  270  grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+  271  ls -l
+  272  cd repogit
+  273  cd ..
+  274  pwd
+  275  exit
+  276  pwd
+  277  ls -l
+  278  cd repogit
+  279  ls -l
+  280  cd TP1_AySO_Huarcaya_Camila/
+  281  grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+  282  git add .
+  283  git commit -m "feat: Añadiendo informacion de CPU"
+  284  ls -l
+  285  cat <<EOF>> README.md 
+  286  Alumno: Huarcaya Camila
+  287  División: 113
+  288  Turno: Mañana
+  289  EOF
+  290  git add README.md datos_usuario.txt 
+  291  git commit -m "ADD: Añadiendo Readme y datos de usuario"
+  292  git push
+  293  pwd
+  294  cd ..
+  295  pwd
+  296  tree
+  297  rm -r clase5
+  298  tree
+  299  mkdir -p {materia1,materia2}/uni{1...3}
+  300  tree
+  301  rm -r materia1 materia2
+  302  tree
+  303  mk -p {materia1, materia2}/{uni1,uni2,uni3}
+  304  mkdir -p {materia1, materia2}/{uni1,uni2,uni3}
+  305  tree
+  306  ls -l
+  307  rm -r {materia1,
+  308  re -r materia2}
+  309  rm -r materia2}
+  310  mkdir -p {materia1,materia2}/uni{1..3}
+  311  tree
+  312  exit
+  313  pwd
+  314  mkdir clase6
+  315  tree
+  316  cd clase6
+  317  touch practica.txt
+  318  ls -l
+  319  tree
+  320  echo ls -l > script1
+  321  ls -l
+  322  cat script
+  323  cat script1
+  324  bash script1
+  325  vim script2.sh
+  326  ls -l
+  327  cat script2.sh
+  328  chmod 775 script2.sh
+  329  ls -l
+  330  ./script2.sh
+  331  vim script2.sh
+  332  ./script2.sh
+  333  clear
+  334  cd ..
+  335  tree
+  336  cd clase6
+  337  history
+  338  history > historial_comandos_cami.txt
+  339  ls -l
+  340  cd ..
+  341  tree
+  342  rm- r materia1
+  343  rm -r materia1
+  344  tree
+  345  rm -r materia2
+  346  rm -r clase6
+  347  tree
+  348  mkdir -p {materi1,materia2}/uni{1..3}
+  349  tree
+  350  history
+  351  cd repogit
+  352  cd TP1_AySO_Huarcaya_Camila/
+  353  vim script_dir.sh
+  354  ls -l
+  355  chmod 774 script_dir.sh
+  356  ls -l
+  357  chmod 764 script_dir.sh
+  358  ls -l
+  359  git add .
+  360  git commit -m "ADD: Añadiendo script"
+  361  git push
+  362  history -a
+  363  ls -l
+  364  cd ..
+  365  history -a
+  366  $HOME/.bash_history
+  367  sudo $HOME/.bash_history
+  368  history
+  369  cd repogit
+  370  cd TP1_AySO_Huarcaya_Camila/
+  371  history
+  372  history > historial_comandos_huarcaya.txt
